@@ -23,6 +23,7 @@ import TrainingPlacement from './pages/TrainingPlacement';
 import Admission from './pages/Admission';
 import Events from './pages/Events';
 import SkillDevelopment from './pages/SkillDevelopment';
+import SearchPage from './pages/Search';
 
 // Admin
 import AdminLogin from './pages/admin/AdminLogin';
@@ -82,8 +83,9 @@ function App() {
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
 
-            {/* Sitemap */}
+            {/* Sitemap & Search */}
             <Route path="/sitemap" element={<PublicLayout><SitemapPage /></PublicLayout>} />
+            <Route path="/search" element={<PublicLayout><SearchPage /></PublicLayout>} />
 
             {/* 404 */}
             <Route path="*" element={<PublicLayout><NotFound /></PublicLayout>} />
