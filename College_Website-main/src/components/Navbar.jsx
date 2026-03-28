@@ -25,7 +25,7 @@ const navItems = [
   { label: 'E-Learning', path: '/e-learning' },
   { label: 'Training & Placement', path: '/training-placement' },
   { label: 'Admission', path: '/admission' },
-  { label: 'Alumni', path: '#', external: true },
+  { label: 'Alumni', path: 'https://nacsc-alumni.co.in/', external: true },
   { label: 'Events', path: '/events' },
   { label: 'Online Feedback', path: '/student-corner/feedback' },
 ];
@@ -53,8 +53,8 @@ export default function Navbar() {
             <div key={item.label} className="relative group">
               {item.children ? (
                 <button
-                  className={`flex items-center gap-1 px-3 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${
-                    location.pathname.startsWith(item.path) ? 'bg-white/15' : ''
+                  className={`flex items-center gap-1 px-3 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${
+                    location.pathname.startsWith(item.path) ? 'bg-white/20 font-semibold' : ''
                   }`}
                 >
                   {item.label}
@@ -65,8 +65,8 @@ export default function Navbar() {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block px-3 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${
-                    location.pathname === item.path ? 'bg-white/15' : ''
+                  className={`block px-3 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${
+                    location.pathname === item.path ? 'bg-white/20 font-semibold' : ''
                   }`}
                 >
                   {item.label}
@@ -75,7 +75,7 @@ export default function Navbar() {
                 <NavLink
                   to={item.path}
                   className={({ isActive }) =>
-                    `block px-3 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${isActive ? 'bg-white/15' : ''}`
+                    `block px-3 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${isActive ? 'bg-white/20 font-semibold border-b-2 border-primary' : ''}`
                   }
                 >
                   {item.label}
@@ -84,13 +84,13 @@ export default function Navbar() {
 
               {/* Desktop dropdown */}
               {item.children && (
-                <div className="absolute top-full left-0 bg-white text-gray-800 rounded-b-lg shadow-lg min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1">
+                <div className="absolute top-full left-0 bg-white text-gray-800 rounded-b-lg shadow-xl border border-gray-100 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-1 z-50">
                   {item.children.map(child => (
                     <NavLink
                       key={child.path}
                       to={child.path}
                       className={({ isActive }) =>
-                        `block px-4 py-2.5 text-sm hover:bg-section-bg hover:text-primary transition-colors ${isActive ? 'text-primary bg-primary-light' : ''}`
+                        `block px-4 py-2.5 text-sm transition-colors ${isActive ? 'text-navy font-semibold bg-primary/10' : 'text-gray-700 hover:bg-primary/8 hover:text-navy'}`
                       }
                     >
                       {child.label}
@@ -103,11 +103,11 @@ export default function Navbar() {
         </div>
 
         {/* Mobile hamburger */}
-        <div className="lg:hidden flex items-center justify-between py-3">
+        <div className="lg:hidden flex items-center justify-between py-3 text-white">
           <span className="text-sm font-semibold">Navigation</span>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="p-1.5 rounded-lg hover:bg-white/10 transition-colors"
+            className="p-1.5 rounded-lg hover:bg-white/10 transition-colors text-white"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -124,8 +124,8 @@ export default function Navbar() {
                 <>
                   <button
                     onClick={() => toggleDropdown(item.label)}
-                    className={`flex items-center justify-between w-full px-5 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${
-                      location.pathname.startsWith(item.path) ? 'bg-white/15' : ''
+                    className={`flex items-center justify-between w-full px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${
+                      location.pathname.startsWith(item.path) ? 'bg-white/20 font-semibold' : ''
                     }`}
                   >
                     {item.label}
@@ -144,7 +144,7 @@ export default function Navbar() {
                           to={child.path}
                           onClick={closeMobile}
                           className={({ isActive }) =>
-                            `block pl-8 pr-5 py-2.5 text-sm hover:bg-white/10 transition-colors ${isActive ? 'text-blue-300' : 'text-gray-300'}`
+                            `block pl-8 pr-5 py-2.5 text-sm hover:bg-white/10 transition-colors ${isActive ? 'text-primary font-semibold' : 'text-white/80'}`
                           }
                         >
                           {child.label}
@@ -159,8 +159,8 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMobile}
-                  className={`block px-5 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${
-                    location.pathname === item.path ? 'bg-white/15' : ''
+                  className={`block px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${
+                    location.pathname === item.path ? 'bg-white/20 font-semibold' : ''
                   }`}
                 >
                   {item.label}
@@ -170,7 +170,7 @@ export default function Navbar() {
                   to={item.path}
                   onClick={closeMobile}
                   className={({ isActive }) =>
-                    `block px-5 py-3 text-sm font-medium hover:bg-white/10 transition-colors ${isActive ? 'bg-white/15' : ''}`
+                    `block px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors ${isActive ? 'bg-white/20 font-semibold' : ''}`
                   }
                 >
                   {item.label}

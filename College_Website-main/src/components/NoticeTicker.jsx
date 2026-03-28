@@ -8,7 +8,7 @@ export default function NoticeTicker() {
   }
 
   return (
-    <div className="bg-primary-light border-b border-blue-200 sticky top-[125px] z-30">
+    <div className="bg-primary-light border-b border-primary/30 sticky top-[125px] z-30">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
         <span className="shrink-0 px-2 py-0.5 bg-primary text-white text-xs font-bold rounded shadow-sm z-10">
           NOTICES

@@ -10,18 +10,18 @@ export const initialData = {
   ],
 
   faculty: [
-    { id: 1, name: "Prof. A.D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Database Management Systems", contact: "9422224440" },
-    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Data Structures & Algorithms", contact: "9423176160" },
-    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Operating Systems", contact: "9420011597" },
-    { id: 4, name: "Prof. B.M. Danave", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Web Technologies", contact: "9403710000" },
-    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "", specialization: "Software Engineering", contact: "9404276376" },
-    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Computer Networks", contact: "9665814300" },
-    { id: 7, name: "Prof. T.S. Thange", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Python Programming", contact: "9822393332" },
-    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Machine Learning", contact: "9284278855" },
-    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Cloud Computing", contact: "9049662964" },
-    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Artificial Intelligence", contact: "9834756544" },
-    { id: 11, name: "Prof. M.J. Jasud", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Information Security", contact: "7218566416" },
-    { id: 12, name: "Prof. K.S. Choure", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Data Analytics", contact: "7498487397" },
+    { id: 1, name: "Prof. Arun D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9422224440", experience: "15+ Years" },
+    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9423176160", experience: "12+ Years" },
+    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9420011597", experience: "10+ Years" },
+    { id: 4, name: "Prof. B.M. Danave", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9403710000", experience: "8+ Years" },
+    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "", contact: "9404276376", experience: "14+ Years" },
+    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9665814300", experience: "9+ Years" },
+    { id: 7, name: "Prof. T.S. Thange", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9822393332", experience: "11+ Years" },
+    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9284278855", experience: "7+ Years" },
+    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", contact: "9049662964", experience: "8+ Years" },
+    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/Information/teacher img/Khalekar_Mam.png", contact: "9834756544", experience: "10+ Years" },
+    { id: 11, name: "Prof. M.J. Jasud", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/Information/teacher img/Jasud_Mam.png", contact: "7218566416", experience: "6+ Years" },
+    { id: 12, name: "Prof. K.S. Choure", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/Information/teacher img/Chaure_Mamm_Zoomed.png", contact: "7498487397", experience: "7+ Years" },
   ],
 
   timetables: [
@@ -42,8 +42,8 @@ export const initialData = {
     { id: 1, year: "FY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", pyqUrl: "#" },
     { id: 2, year: "SY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", pyqUrl: "#" },
     { id: 3, year: "TY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", pyqUrl: "#" },
-    { id: 4, year: "M.Sc. CS - I", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", pyqUrl: "#" },
-    { id: 5, year: "M.Sc. CS - II", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", pyqUrl: "#" },
+    { id: 4, year: "M.Sc. CS - I", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC. CS-I.pdf", pyqUrl: "#" },
+    { id: 5, year: "M.Sc. CS - II", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC. CS-II.pdf", pyqUrl: "#" },
   ],
 
   toppers: [],
@@ -97,6 +97,12 @@ export const initialData = {
   },
 
   skillPrograms: [],
+
+  admins: [
+    { id: 1, name: "Super Admin", username: "superadmin", password: "superadmin123", role: "superadmin" }
+  ],
+
+  adminRequests: [],
 };
 
 // Keys used in localStorage
@@ -106,7 +112,11 @@ export function loadData() {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored) {
     try {
-      return JSON.parse(stored);
+      const parsed = JSON.parse(stored);
+      // Ensure backwards compatibility for existing localStorage data
+      if (!parsed.admins) parsed.admins = [...initialData.admins];
+      if (!parsed.adminRequests) parsed.adminRequests = [];
+      return parsed;
     } catch {
       return { ...initialData };
     }

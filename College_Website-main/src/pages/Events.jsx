@@ -63,7 +63,7 @@ export default function Events() {
                 key={event.id}
                 className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 group"
               >
-                <PlaceholderImage label="Event Photo" height="180px" className="!rounded-none" />
+                <PlaceholderImage src={event.imageUrl} label="Event Photo" height="180px" className="!rounded-none" />
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <Calendar size={14} className="text-primary" />

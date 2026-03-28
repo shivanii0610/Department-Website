@@ -8,15 +8,15 @@ export default {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#1E3A5F',
-          light: '#2a4d7a',
-          dark: '#152c49',
+          DEFAULT: '#7B1D24',  /* Deep Maroon - DY Patil style */
+          light: '#9B2B34',
+          dark: '#5C1219',
         },
-        'section-bg': '#F0F4F8',
+        'section-bg': '#FDF5F0',  /* Warm cream background */
         primary: {
-          DEFAULT: '#2563EB',
-          hover: '#1d4ed8',
-          light: '#dbeafe',
+          DEFAULT: '#C9973A',  /* Rich Gold/Amber */
+          hover: '#A87A28',
+          light: '#FEF3DC',   /* Light gold tint */
         },
       },
       fontFamily: {

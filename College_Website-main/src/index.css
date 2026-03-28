@@ -56,8 +56,8 @@
 }
 
 .placeholder-img:hover {
-  border-color: #2563EB;
-  color: #2563EB;
+  border-color: #C9973A;
+  color: #C9973A;
 }
 
 /* Custom scrollbar */
@@ -68,9 +68,9 @@
   background: #f3f4f6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #C9973A;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #A87A28;
 }

@@ -33,7 +33,7 @@ export default function Search() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 min-h-[50vh]">
       <div className="flex items-center gap-3 mb-8">
-        <div className="p-3 bg-blue-50 rounded-full text-blue-800">
+        <div className="p-3 bg-primary-light rounded-full text-navy">
             <SearchIcon className="w-6 h-6" />
         </div>
         <h1 className="text-3xl font-bold text-navy">Search Results</h1>
@@ -41,7 +41,7 @@ export default function Search() {
 
       <div className="mb-6 border-b border-gray-200 pb-4">
         <p className="text-gray-600 text-lg">
-          Showing results for: <span className="font-semibold text-blue-800">"{query}"</span>
+          Showing results for: <span className="font-semibold text-navy">"{query}"</span>
         </p>
       </div>
 
@@ -52,8 +52,8 @@ export default function Search() {
       ) : results.length > 0 ? (
         <div className="space-y-4">
           {results.map((result, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
-              <Link to={result.path} className="text-xl font-bold text-blue-800 hover:text-blue-600 mb-2 block">
+            <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-primary/40 hover:shadow-md transition-all">
+              <Link to={result.path} className="text-xl font-bold text-navy hover:text-primary mb-2 block">
                 {result.title}
               </Link>
               <p className="text-gray-600 mb-3">{result.description}</p>
