@@ -122,7 +122,7 @@ export default function AdminLogin() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
         className="hidden lg:flex lg:w-[55%] relative flex-col justify-between p-12 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #6b1a2a 0%, #8b2035 40%, #a0293f 70%, #7a1520 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #5c4033 0%, #704214 40%, #8b4513 70%, #4a2e22 100%)' }}
       >
         {/* Background decorative circles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -184,7 +184,7 @@ export default function AdminLogin() {
         <div className="w-full max-w-sm">
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: '#6b1a2a' }}>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: '#5c4033' }}>
               <GraduationCap size={20} className="text-yellow-300" />
             </div>
             <div>
@@ -201,7 +201,7 @@ export default function AdminLogin() {
             <button 
               onClick={toggleMode}
               className="text-xs font-semibold hover:underline"
-              style={{ color: '#6b1a2a' }}
+              style={{ color: '#5c4033' }}
             >
               {isLoginMode ? 'Need access?' : 'Already have access?'}
             </button>
@@ -254,7 +254,7 @@ export default function AdminLogin() {
                        placeholder="Enter your full name"
                        required={!isLoginMode}
                        className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl text-sm bg-white focus:outline-none transition-all"
-                       onFocus={e => e.target.style.boxShadow = '0 0 0 3px rgba(107,26,42,0.15)'}
+                       onFocus={e => e.target.style.boxShadow = '0 0 0 3px rgba(92,64,51,0.15)'}
                        onBlur={e => e.target.style.boxShadow = 'none'}
                      />
                    </div>
@@ -320,7 +320,7 @@ export default function AdminLogin() {
               type="submit"
               disabled={loading}
               className="w-full py-3 mt-4 text-white font-semibold rounded-xl text-sm shadow-lg transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70"
-              style={{ background: loading ? '#9b2d3f' : 'linear-gradient(135deg, #6b1a2a, #8b2035)', boxShadow: '0 4px 16px rgba(107,26,42,0.35)' }}
+              style={{ background: loading ? '#704214' : 'linear-gradient(135deg, #5c4033, #704214)', boxShadow: '0 4px 16px rgba(92,64,51,0.35)' }}
               onMouseEnter={e => !loading && (e.target.style.filter = 'brightness(1.1)')}
               onMouseLeave={e => (e.target.style.filter = 'none')}
             >

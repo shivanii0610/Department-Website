@@ -28,8 +28,8 @@ const sections = [
 ];
 
 // ─── Shared UI Components ───────────────────────────────────────────────────────
-const MAROON = '#6b1a2a';
-const MAROON_DARK = '#4e1220';
+const MAROON = '#5c4033';
+const MAROON_DARK = '#3b2820';
 const GOLD = '#d4a823';
 
 function Modal({ title, onClose, children }) {
@@ -131,7 +131,7 @@ function FileSelect({ value, onChange, type = "image", label = "Upload File" }) 
       )}
       <div className="flex items-center gap-3">
         <label className="flex-1 cursor-pointer group">
-          <div className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl group-hover:border-red-300 group-hover:bg-red-50 transition-all text-xs font-bold text-gray-500 group-hover:text-[#6b1a2a]">
+          <div className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl group-hover:border-amber-700 group-hover:bg-amber-50 transition-all text-xs font-bold text-gray-500 group-hover:text-[#5c4033]">
             {uploading ? (
               <Loader2 className="w-4 h-4 animate-spin" />
             ) : (
@@ -162,7 +162,7 @@ function SaveBtn({ onClick, label = 'Save' }) {
     <button
       onClick={onClick}
       className="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 text-white font-semibold rounded-xl text-sm shadow-md transition-all"
-      style={{ background: `linear-gradient(135deg, ${MAROON}, ${MAROON_DARK})`, boxShadow: `0 4px 12px rgba(107,26,42,0.3)` }}
+      style={{ background: `linear-gradient(135deg, ${MAROON}, ${MAROON_DARK})`, boxShadow: `0 4px 12px rgba(92,64,51,0.3)` }}
       onMouseEnter={e => e.currentTarget.style.filter = 'brightness(1.08)'}
       onMouseLeave={e => e.currentTarget.style.filter = 'none'}
     >
