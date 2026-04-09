@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Eye, Target, Award, Star } from 'lucide-react';
 import PlaceholderImage from '../components/PlaceholderImage';
+import { FACULTY_IMAGES } from '../data/facultyImages';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -126,7 +127,15 @@ export default function AboutCollege() {
             variants={fadeUp}
             className="flex items-center gap-5 bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300"
           >
-            <PlaceholderImage label={person.title} height="120px" className="w-28 shrink-0 !rounded-lg" />
+            {FACULTY_IMAGES[person.name] ? (
+              <img
+                src={FACULTY_IMAGES[person.name]}
+                alt={person.name}
+                className="w-28 h-[120px] shrink-0 rounded-lg object-cover border border-gray-100 shadow-sm"
+              />
+            ) : (
+              <PlaceholderImage label={person.title} height="120px" className="w-28 shrink-0 !rounded-lg" />
+            )}
             <div>
               <span className="text-xs font-semibold text-primary uppercase tracking-wider">{person.title}</span>
               <h3 className="text-lg font-bold text-navy mt-1">{person.name}</h3>

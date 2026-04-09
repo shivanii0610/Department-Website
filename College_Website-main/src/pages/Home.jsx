@@ -193,8 +193,8 @@ export default function Home() {
           >
             {/* Photo */}
             <motion.div variants={fadeUp} className="flex flex-col items-center text-center">
-              <div className="w-40 h-40 rounded-full bg-gradient-to-br from-navy to-primary flex items-center justify-center mb-4 shadow-xl shadow-navy/20">
-                <GraduationCap size={64} className="text-white/80" />
+              <div className="w-40 h-40 rounded-full bg-gradient-to-br from-navy to-primary flex items-center justify-center mb-4 shadow-xl shadow-navy/20 overflow-hidden border-4 border-white">
+                <img src="/admin-photos/Prof. Arun D. Gangarde.jpeg" alt="Prof. A.D. Gangarde" className="w-full h-full object-cover object-[center_top]" />
               </div>
               <h3 className="font-bold text-navy text-lg">Prof. A.D. Gangarde</h3>
               <p className="text-primary text-sm font-medium">Head of Department</p>

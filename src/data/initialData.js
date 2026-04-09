@@ -10,16 +10,16 @@ export const initialData = {
   ],
 
   faculty: [
-    { id: 1, name: "Prof. A.D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Database Management Systems", contact: "9422224440" },
-    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Data Structures & Algorithms", contact: "9423176160" },
-    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Operating Systems", contact: "9420011597" },
+    { id: 1, name: "Prof. A.D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. Arun D. Gangarde.jpeg", specialization: "Database Management Systems", contact: "9422224440" },
+    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Bhingare.jpeg", specialization: "Data Structures & Algorithms", contact: "9423176160" },
+    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Gobare.jpeg", specialization: "Operating Systems", contact: "9420011597" },
     { id: 4, name: "Prof. B.M. Danave", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Web Technologies", contact: "9403710000" },
-    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "", specialization: "Software Engineering", contact: "9404276376" },
-    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Computer Networks", contact: "9665814300" },
+    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "/admin-photos/Dr. A.A. Takate.jpeg", specialization: "Software Engineering", contact: "9404276376" },
+    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.A. Karkhile.png", specialization: "Computer Networks", contact: "9665814300" },
     { id: 7, name: "Prof. T.S. Thange", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Python Programming", contact: "9822393332" },
-    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Machine Learning", contact: "9284278855" },
-    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Cloud Computing", contact: "9049662964" },
-    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Artificial Intelligence", contact: "9834756544" },
+    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.S. Kale.jpeg", specialization: "Machine Learning", contact: "9284278855" },
+    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.R. Choudhary.jpeg", specialization: "Cloud Computing", contact: "9049662964" },
+    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.B. Khalekar.jpeg", specialization: "Artificial Intelligence", contact: "9834756544" },
     { id: 11, name: "Prof. M.J. Jasud", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Information Security", contact: "7218566416" },
     { id: 12, name: "Prof. K.S. Choure", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Data Analytics", contact: "7498487397" },
   ],
@@ -99,7 +99,7 @@ export const initialData = {
 };
 
 // Keys used in localStorage
-const STORAGE_KEY = 'cs_dept_data_v17';
+const STORAGE_KEY = 'cs_dept_data_v18';
 
 export function loadData() {
   const stored = localStorage.getItem(STORAGE_KEY);
