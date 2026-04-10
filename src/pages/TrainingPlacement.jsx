@@ -29,7 +29,7 @@ export default function TrainingPlacement() {
               key={p.id}
               className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 group"
             >
-              <PlaceholderImage label="Student Photo" height="180px" className="!rounded-none" />
+              <PlaceholderImage src={p.imageUrl} aspect="passport" label="Student Photo" />
               <div className="p-4">
                 <h3 className="font-bold text-navy group-hover:text-primary transition-colors">{p.name}</h3>
                 <div className="flex items-center gap-1 mt-1">
@@ -57,7 +57,7 @@ export default function TrainingPlacement() {
               key={t.id}
               className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
             >
-              <PlaceholderImage label="Training Photo" height="160px" className="!rounded-none" />
+              <PlaceholderImage src={t.imageUrl} label="Training Photo" height="160px" className="!rounded-none" />
               <div className="p-5">
                 <h3 className="font-bold text-navy mb-2">{t.name}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">{t.overview}</p>

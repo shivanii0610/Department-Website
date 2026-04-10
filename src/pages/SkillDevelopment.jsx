@@ -17,7 +17,7 @@ const programs = [
 
 const statusColors = {
   Ongoing: 'bg-green-50 text-green-700 border-green-200',
-  Upcoming: 'bg-blue-50 text-blue-700 border-blue-200',
+  Upcoming: 'bg-primary-light text-primary border-primary/30',
   Completed: 'bg-gray-100 text-gray-600 border-gray-200',
 };
 
