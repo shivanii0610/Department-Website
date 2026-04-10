@@ -10,18 +10,18 @@ export const initialData = {
   ],
 
   faculty: [
-    { id: 1, name: "Prof. A.D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. Arun D. Gangarde.jpeg", specialization: "Database Management Systems", contact: "9422224440" },
-    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Bhingare.jpeg", specialization: "Data Structures & Algorithms", contact: "9423176160" },
-    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Gobare.jpeg", specialization: "Operating Systems", contact: "9420011597" },
-    { id: 4, name: "Prof. B.M. Danave", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Web Technologies", contact: "9403710000" },
-    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "/admin-photos/Dr. A.A. Takate.jpeg", specialization: "Software Engineering", contact: "9404276376" },
-    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.A. Karkhile.png", specialization: "Computer Networks", contact: "9665814300" },
-    { id: 7, name: "Prof. T.S. Thange", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Python Programming", contact: "9822393332" },
-    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.S. Kale.jpeg", specialization: "Machine Learning", contact: "9284278855" },
-    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.R. Choudhary.jpeg", specialization: "Cloud Computing", contact: "9049662964" },
-    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.B. Khalekar.jpeg", specialization: "Artificial Intelligence", contact: "9834756544" },
-    { id: 11, name: "Prof. M.J. Jasud", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Information Security", contact: "7218566416" },
-    { id: 12, name: "Prof. K.S. Choure", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "", specialization: "Data Analytics", contact: "7498487397" },
+    { id: 1, name: "Prof. Arun D. Gangarde", designation: "Head of Department", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. Arun D. Gangarde.jpeg", contact: "9422224440", experience: "15+ Years" },
+    { id: 2, name: "Prof. M.B. Bhingare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Bhingare.jpeg", contact: "9423176160", experience: "12+ Years" },
+    { id: 3, name: "Prof. M.B. Gobare", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.B. Gobare.jpeg", contact: "9420011597", experience: "10+ Years" },
+    { id: 4, name: "Prof. B.M. Danave", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. B.M. Danave.jpeg", contact: "9403710000", experience: "8+ Years" },
+    { id: 5, name: "Dr. A.A. Takate", designation: "Assistant Professor", qualification: "Ph.D., M.Sc. Computer Science", imageUrl: "/admin-photos/Dr. A.A. Takate.jpeg", contact: "9404276376", experience: "14+ Years" },
+    { id: 6, name: "Prof. M.A. Karkhile", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.A. Karkhile.jpeg", contact: "9665814300", experience: "9+ Years" },
+    { id: 7, name: "Prof. T.S. Thange", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. T.S. Thange.jpeg", contact: "9822393332", experience: "11+ Years" },
+    { id: 8, name: "Prof. S.S. Kale", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.S. Kale.jpeg", contact: "9284278855", experience: "7+ Years" },
+    { id: 9, name: "Prof. M.R. Choudhary", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.R. Choudhary.jpeg", contact: "9049662964", experience: "8+ Years" },
+    { id: 10, name: "Prof. S.B. Khalekar", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. S.B. Khalekar.jpeg", contact: "9834756544", experience: "10+ Years" },
+    { id: 11, name: "Prof. M.J. Jasud", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. M.J. Jasud.jpeg", contact: "7218566416", experience: "6+ Years" },
+    { id: 12, name: "Prof. K.S. Choure", designation: "Assistant Professor", qualification: "M.Sc. Computer Science", imageUrl: "/admin-photos/Prof. K.S. Choure.jpeg", contact: "7498487397", experience: "7+ Years" },
   ],
 
   timetables: [
@@ -42,7 +42,8 @@ export const initialData = {
     { id: 1, year: "FY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", pyqUrl: "#" },
     { id: 2, year: "SY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", pyqUrl: "#" },
     { id: 3, year: "TY B.Sc. CS", level: "UG", semester: "All", syllabusUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", pyqUrl: "#" },
-    { id: 4, year: "M.Sc. CS", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", pyqUrl: "#" },
+    { id: 4, year: "M.Sc. CS - I", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC. CS-I.pdf", pyqUrl: "#" },
+    { id: 5, year: "M.Sc. CS - II", level: "PG", semester: "All", syllabusUrl: "/Information/Syllabus/M.SC. CS-II.pdf", pyqUrl: "#" },
   ],
 
   toppers: [],
@@ -56,7 +57,7 @@ export const initialData = {
     extraCurricular: [],
     conferences: [],
     cultural: [
-      { id: 1, title: "Tech Savina 2025", date: "2025-02-14", description: "Annual technical and cultural festival of the Computer Science Department featuring project exhibitions, coding contests, and cultural performances.", imageUrl: "/Information/Dept Event Photh/DSC_3731.JPG" },
+      { id: 1, title: "Tech Srujana 2025", date: "2025-02-14", description: "Annual technical and cultural festival of the Computer Science Department featuring project exhibitions, coding contests, and cultural performances.", imageUrl: "/Information/Dept Event Photh/DSC_3731.JPG" },
       { id: 2, title: "Prize Distribution", date: "2025-02-15", description: "Annual prize distribution ceremony for academics and sports events.", imageUrl: "/Information/Dept Event Photh/DSC_7997.JPG" },
       { id: 3, title: "Cultural Event Showcase", date: "2025-02-13", description: "Students showcasing traditional dances and programs.", imageUrl: "/Information/Dept Event Photh/DSC_8014.JPG" },
     ],
@@ -66,46 +67,56 @@ export const initialData = {
 
   books: {
     "FY": [
-      { id: 1, subject: "Problem Solving using C", regularBook: "C Programming by Balagurusamy", referenceBook: "Nirali Prakashan", workbook: "Practical C Programming Lab Manual", pdfUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", videoUrl: "https://www.youtube.com/watch?v=ZRetXN69u30" },
-      { id: 2, subject: "Database Management Systems", regularBook: "Fundamentals of Database Systems", referenceBook: "Pearson", workbook: "SQL & DBMS Practice Book", pdfUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", videoUrl: "https://www.youtube.com/watch?v=kBdlM6hHGA8" },
-      { id: 3, subject: "Discrete Mathematics", regularBook: "Discrete Mathematical Structures", referenceBook: "McGraw Hill", workbook: "Logic & Set Theory Worksheet", pdfUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", videoUrl: "https://www.youtube.com/watch?v=hB9v07eZ2m8" },
-      { id: 4, subject: "Digital Electronics", regularBook: "Digital Logic and Design", referenceBook: "Technical Publications", workbook: "Circuit Designing Lab Book", pdfUrl: "/Information/Syllabus/Fy-B.-Sc.-Computer-Sciecne-2024-25.pdf", videoUrl: "https://www.youtube.com/watch?v=yYueuXp7v3A" },
+      { id: 1, subject: "Problem Solving using C", publication: "Nirali Prakashan", pdfUrl: "#" },
+      { id: 2, subject: "Database Management Systems", publication: "Pearson", pdfUrl: "#" },
+      { id: 3, subject: "Discrete Mathematics", publication: "McGraw Hill", pdfUrl: "#" },
+      { id: 4, subject: "Digital Electronics", publication: "Technical Publications", pdfUrl: "#" },
     ],
     "SY": [
-      { id: 1, subject: "Data Structures using C", regularBook: "Data Structures Through C in Depth", referenceBook: "Oxford University Press", workbook: "DS Implementation Lab Manual", pdfUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", videoUrl: "https://www.youtube.com/watch?v=RBSGKlAvoiM" },
-      { id: 2, subject: "Software Engineering", regularBook: "Software Engineering Principles", referenceBook: "Pressman (McGraw Hill)", workbook: "Case Tools Practice Book", pdfUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", videoUrl: "https://www.youtube.com/watch?v=4pP5pOn3m-8" },
-      { id: 3, subject: "Operating Systems", regularBook: "Operating System Concepts", referenceBook: "Galvin (Wiley)", workbook: "Linux Shell Scripting Guide", pdfUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", videoUrl: "https://www.youtube.com/watch?v=vBURTt97EkA" },
-      { id: 4, subject: "Computer Networks", regularBook: "Computer Networking: A Top-Down Approach", referenceBook: "Tanenbaum (Pearson)", workbook: "Networking Protocols Lab Book", pdfUrl: "/Information/Syllabus/SY B. Sc. Major syllabus template for Printout.pdf", videoUrl: "https://www.youtube.com/watch?v=JFF2vJKuzFY" },
+      { id: 1, subject: "Data Structures using C", publication: "Oxford University Press", pdfUrl: "#" },
+      { id: 2, subject: "Software Engineering", publication: "Pressman (McGraw Hill)", pdfUrl: "#" },
+      { id: 3, subject: "Operating Systems", publication: "Galvin (Wiley)", pdfUrl: "#" },
+      { id: 4, subject: "Computer Networks", publication: "Tanenbaum (Pearson)", pdfUrl: "#" },
     ],
     "TY": [
-      { id: 1, subject: "Artificial Intelligence", regularBook: "Artificial Intelligence: A Modern Approach", referenceBook: "PHI Publications", workbook: "AI Logic Practice Manual", pdfUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", videoUrl: "https://www.youtube.com/watch?v=oV74Najm6Nc" },
-      { id: 2, subject: "Web Technologies", regularBook: "Web Programming with HTML/CSS/JS", referenceBook: "Nirali Prakashan", workbook: "Frontend Development Lab Book", pdfUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", videoUrl: "https://www.youtube.com/watch?v=6mbwJ2xhgzM" },
-      { id: 3, subject: "Machine Learning", regularBook: "Pattern Recognition and ML", referenceBook: "O'Reilly Media", workbook: "Python ML Implementation Book", pdfUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", videoUrl: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
-      { id: 4, subject: "Information Security", regularBook: "Cryptography and Network Security", referenceBook: "McGraw Hill", workbook: "Cyber Security Lab Manual", pdfUrl: "/Information/Syllabus/TYBSC  Computer Science Major SYLLABUS 2025-26 FINAL.pdf", videoUrl: "https://www.youtube.com/watch?v=UIdV6mS5iEw" },
+      { id: 1, subject: "Artificial Intelligence", publication: "PHI Publications", pdfUrl: "#" },
+      { id: 2, subject: "Web Technologies", publication: "Nirali Prakashan", pdfUrl: "#" },
+      { id: 3, subject: "Machine Learning", publication: "O'Reilly Media", pdfUrl: "#" },
+      { id: 4, subject: "Information Security", publication: "McGraw Hill", pdfUrl: "#" },
     ],
     "MSC-I": [
-      { id: 1, subject: "Advanced Algorithms", regularBook: "Introduction to Algorithms", referenceBook: "Cormen (MIT Press)", workbook: "Algo Analysis Worksheet", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=0IAPZzGSbME" },
-      { id: 2, subject: "Cloud Computing", regularBook: "Cloud Computing: Concepts and Tech", referenceBook: "Wiley Publications", workbook: "AWS/Azure Cloud Lab Manual", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=2LaAJq1lB1Q" },
-      { id: 3, subject: "Advanced Database Systems", regularBook: "NoSQL and Big Data", referenceBook: "Pearson", workbook: "MongoDB Practice Guide", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=wmH_05_9p_g" },
+      { id: 1, subject: "Advanced Algorithms", publication: "Cormen (MIT Press)", pdfUrl: "#" },
+      { id: 2, subject: "Cloud Computing", publication: "Wiley Publications", pdfUrl: "#" },
+      { id: 3, subject: "Advanced Database Systems", publication: "Pearson", pdfUrl: "#" },
     ],
     "MSC-II": [
-      { id: 1, subject: "Big Data Analytics", regularBook: "Mining of Massive Datasets", referenceBook: "Packt Publishing", workbook: "Spark & Hadoop Lab Book", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=N63C6fSTGq8" },
-      { id: 2, subject: "Deep Learning", regularBook: "Deep Learning with Python", referenceBook: "O'Reilly Media", workbook: "TensorFlow Practice Book", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=q6n_izMvYto" },
-      { id: 3, subject: "Internet of Things", regularBook: "IoT: Architecture and Design", referenceBook: "PHI Publications", workbook: "Arduino/Raspberry Pi Lab Guide", pdfUrl: "/Information/Syllabus/M.SC New PG Syllabus Template for Major in Science Faculty Final (1).pdf", videoUrl: "https://www.youtube.com/watch?v=v9UveX7fRao" },
+      { id: 1, subject: "Big Data Analytics", publication: "Packt Publishing", pdfUrl: "#" },
+      { id: 2, subject: "Deep Learning", publication: "O'Reilly Media", pdfUrl: "#" },
+      { id: 3, subject: "Internet of Things", publication: "PHI Publications", pdfUrl: "#" },
     ],
   },
 
   skillPrograms: [],
+
+  admins: [
+    { id: 1, name: "Super Admin", username: "superadmin", password: "superadmin123", role: "superadmin" }
+  ],
+
+  adminRequests: [],
 };
 
 // Keys used in localStorage
-const STORAGE_KEY = 'cs_dept_data_v18';
+const STORAGE_KEY = 'cs_dept_data_v5';
 
 export function loadData() {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored) {
     try {
-      return JSON.parse(stored);
+      const parsed = JSON.parse(stored);
+      // Ensure backwards compatibility for existing localStorage data
+      if (!parsed.admins) parsed.admins = [...initialData.admins];
+      if (!parsed.adminRequests) parsed.adminRequests = [];
+      return parsed;
     } catch {
       return { ...initialData };
     }

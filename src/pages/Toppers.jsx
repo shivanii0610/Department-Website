@@ -96,7 +96,7 @@ export default function Toppers() {
                 key={topper.id}
                 className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 text-center"
               >
-                <PlaceholderImage label="Topper Photo" height="180px" className="!rounded-none" />
+                <PlaceholderImage src={topper.imageUrl} aspect="passport" height="250px" label="Topper Photo" />
                 <div className="p-4">
                   <h3 className="font-bold text-navy">{topper.name}</h3>
                   <p className="text-sm text-gray-500">{topper.program}</p>

@@ -10,10 +10,9 @@ const fadeUp = {
 };
 
 const eventCategories = [
-  { key: 'alumni', label: 'Alumni', icon: Users },
   { key: 'extraCurricular', label: 'Extra Curricular', icon: Lightbulb },
   { key: 'conferences', label: 'Conferences & Workshops', icon: Calendar },
-  { key: 'cultural', label: 'Cultural / Tech Savina', icon: PartyPopper },
+  { key: 'cultural', label: 'Cultural / Tech Srujana', icon: PartyPopper },
   { key: 'awards', label: 'Awards & Felicitation', icon: Award },
   { key: 'social', label: 'Social Activities', icon: Heart },
 ];
@@ -64,7 +63,7 @@ export default function Events() {
                 key={event.id}
                 className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 group"
               >
-                <PlaceholderImage label="Event Photo" height="180px" className="!rounded-none" />
+                <PlaceholderImage src={event.imageUrl} label="Event Photo" height="180px" className="!rounded-none" />
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-2">
                     <Calendar size={14} className="text-primary" />

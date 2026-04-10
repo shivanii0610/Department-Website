@@ -2,29 +2,28 @@ import { createContext, useContext, useState, useCallback } from 'react';
 
 const AuthContext = createContext(null);
 
-const CREDENTIALS = { username: 'admin', password: 'admin123' };
-
 export function AuthProvider({ children }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    return sessionStorage.getItem('admin_auth') === 'true';
+  const [currentUser, setCurrentUser] = useState(() => {
+    const stored = sessionStorage.getItem('admin_user');
+    return stored ? JSON.parse(stored) : null;
   });
 
-  const login = useCallback((username, password) => {
-    if (username === CREDENTIALS.username && password === CREDENTIALS.password) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('admin_auth', 'true');
-      return true;
-    }
-    return false;
+  const isAuthenticated = !!currentUser;
+
+  // login now accepts a user object validated by the component
+  const login = useCallback((user) => {
+    setCurrentUser(user);
+    sessionStorage.setItem('admin_user', JSON.stringify(user));
+    return true;
   }, []);
 
   const logout = useCallback(() => {
-    setIsAuthenticated(false);
-    sessionStorage.removeItem('admin_auth');
+    setCurrentUser(null);
+    sessionStorage.removeItem('admin_user');
   }, []);
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
+    <AuthContext.Provider value={{ isAuthenticated, currentUser, login, logout }}>
       {children}
     </AuthContext.Provider>
   );

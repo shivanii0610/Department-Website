@@ -11,6 +11,22 @@
     <title>Department of Computer Science | AJMVPS College, Ahilyanagar</title>
   </head>
   <body>
+    <script>
+      // Clean Console: Intercept and suppress Chrome Extension related dynamic import errors
+      window.addEventListener('error', function(event) {
+        if (event.message && event.message.includes('Failed to fetch dynamically imported module')) {
+          if (event.filename && event.filename.includes('chrome-extension://')) {
+            event.preventDefault(); // Suppress the error in the console
+          }
+        }
+      });
+      // Also intercept unhandled promise rejections for same reason
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && event.reason.message && event.reason.message.includes('Failed to fetch dynamically imported module')) {
+          event.preventDefault();
+        }
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -8,7 +8,7 @@ export default function NoticeTicker() {
   }
 
   return (
-    <div className="bg-primary-light border-b border-blue-200 sticky top-[125px] z-30">
+    <div className="bg-primary-light border-b border-primary/30 sticky top-[125px] z-30">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
         <span className="shrink-0 px-2 py-0.5 bg-primary text-white text-xs font-bold rounded shadow-sm z-10">
           NOTICES
@@ -31,7 +31,7 @@ export default function NoticeTicker() {
           100% { transform: translateX(-100%); }
         }
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 120s linear infinite;
         }
         .mask-edges {
           mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);

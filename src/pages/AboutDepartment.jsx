@@ -61,7 +61,7 @@ export default function AboutDepartment() {
             Head of Department
           </h2>
           <div className="flex flex-col md:flex-row items-center gap-6 bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-shadow">
-            <PlaceholderImage label="HOD Photo" height="180px" className="w-48 shrink-0 !rounded-lg" />
+            <PlaceholderImage src={hod.imageUrl} aspect="passport" label="HOD Photo" />
             <div>
               <h3 className="text-xl font-bold text-navy">{hod.name}</h3>
               <p className="text-primary font-medium mt-1">{hod.designation}</p>
@@ -94,7 +94,7 @@ export default function AboutDepartment() {
               key={faculty.id}
               className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 group"
             >
-              <PlaceholderImage label="Faculty Photo" height="200px" className="!rounded-none" />
+              <PlaceholderImage src={faculty.imageUrl} aspect="passport" label="Faculty Photo" />
               <div className="p-4">
                 <h3 className="font-bold text-navy group-hover:text-primary transition-colors">{faculty.name}</h3>
                 <p className="text-sm text-primary mt-0.5">{faculty.designation}</p>

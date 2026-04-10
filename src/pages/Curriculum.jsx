@@ -32,14 +32,6 @@ export default function Curriculum() {
         >
           <FileText size={14} /> Syllabus
         </a>
-        <a
-          href={item.pyqUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-1 px-3 py-2 bg-navy text-white text-sm font-medium rounded-lg hover:bg-navy-dark transition-colors"
-        >
-          <FileText size={14} /> PYQ
-        </a>
       </div>
     </div>
   );
@@ -48,7 +40,7 @@ export default function Curriculum() {
     <div className="max-w-7xl mx-auto px-4 py-12">
       <motion.div initial="hidden" animate="visible" variants={fadeUp}>
         <h1 className="text-3xl font-bold text-navy mb-2">Curriculum</h1>
-        <p className="text-gray-500 mb-8">Access syllabus and previous year question papers for all programs.</p>
+        <p className="text-gray-500 mb-8">Access syllabus for all programs.</p>
       </motion.div>
 
       <div className="grid lg:grid-cols-2 gap-10">
